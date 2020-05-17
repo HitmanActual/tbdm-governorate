@@ -18,6 +18,7 @@ class CreateGovernoratesTable extends Migration
             $table->string('governorate_name');
             $table->string('governorate_name_en');
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
